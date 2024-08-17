@@ -20,10 +20,6 @@ def web_portfolio():
     image_path = os.path.join(base_path, "dp.png")
     pdf_path = os.path.join(base_path, "profile.pdf")
 
-    # Debug: Print file paths
-    st.write(f"Image path: {image_path}")
-    st.write(f"PDF path: {pdf_path}")
-
     # Load Profile Image
     try:
         with open(image_path, "rb") as img_file:
