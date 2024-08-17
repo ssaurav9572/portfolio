@@ -16,9 +16,13 @@ def web_portfolio():
     st.markdown('<style>div.block-container{padding-top:3rem;}</style>', unsafe_allow_html=True)
 
     # Set the path to files
-    base_path = os.path.dirname(__file__)
+    base_path = os.path.dirname(os.path.abspath(__file__))
     image_path = os.path.join(base_path, "dp.png")
     pdf_path = os.path.join(base_path, "Profile.pdf")
+
+    # Debug: Print file paths
+    st.write(f"Image path: {image_path}")
+    st.write(f"PDF path: {pdf_path}")
 
     # Load Profile Image
     try:
@@ -98,7 +102,7 @@ def web_portfolio():
 
     # Download CV button
     if pdf_bytes:
-        st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="profile.pdf", mime="application/pdf")
+        st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="Profile.pdf", mime="application/pdf")
     else:
         st.warning("CV file not available for download.")
 
