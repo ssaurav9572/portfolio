@@ -18,7 +18,7 @@ def web_portfolio():
     # Set the path to files
     base_path = os.path.dirname(os.path.abspath(__file__))
     image_path = os.path.join(base_path, "dp.png")
-    pdf_path = os.path.join(base_path, "Profile.pdf")
+    pdf_path = os.path.join(base_path, "profile.pdf")
 
     # Debug: Print file paths
     st.write(f"Image path: {image_path}")
@@ -102,7 +102,7 @@ def web_portfolio():
 
     # Download CV button
     if pdf_bytes:
-        st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="Profile.pdf", mime="application/pdf")
+        st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="profile.pdf", mime="application/pdf")
     else:
         st.warning("CV file not available for download.")
 
