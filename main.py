@@ -87,9 +87,9 @@ def web_portfolio():
     # About Me Section
     st.subheader("About Me")
     st.markdown("""
-    - 🧑‍💻 I am a **Python Developer** at [Cuebo.ai](https://cuebo.ai/), where I am currently working on a Voice Simulator project.
+    - 🧑‍💻 I am a **Python Developer** at [Cuebo.ai](https://cuebo.ai/), where I’m enhancing AI systems, focusing on **Conversational AI** and **API development**.
     - 🚀 Previously, I served as a Backend Developer Intern at [ethan.ai](https://www.ethan-ai.com/).
-    - ❤️ I am passionate about *Artificial Intelligence, Software Engineering, Data Analytics, Data Engineering, Automation*, and more!
+    - ❤️ I am passionate about *Artificial Intelligence, Prompt Engineering, Data Analytics, Data Engineering, Automation*, and more!
     - 🤖 Additionally, I have also worked as an intern at [Wiley Edge](https://wileyedge.neohire.io/)
     - 🏂 In my free time, I enjoy practicing sports such as Cricket and Cycling.
     - 🪧 You can reach me at ssaurav9572@gmail.com.
