@@ -293,6 +293,7 @@ elif section == "Skills":
     """, unsafe_allow_html=True)
 
 elif section == "Experience":
+    st.subheader("💼 My Experience")
     if "exp_index" not in st.session_state:
         st.session_state.exp_index = 0
 
@@ -372,4 +373,5 @@ elif section == "Resume":
 
 # --- Footer ---
 st.markdown("---")
+
 st.markdown('<div class="footer">Made with ❤️ by Shailendra Saurav — <strong>This portfolio was crafted with ChatGPT</strong></div>', unsafe_allow_html=True)
