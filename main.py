@@ -181,7 +181,7 @@ resume = {
          "desc": "Interactive tool for analyzing 5 years of historical stock data.",
          "tech": "Python, Streamlit, Pandas, Plotly", 
          "link": "https://github.com/ssaurav9572/stock_market_dashboard", 
-         "website": "https://stockanalysisdashboards.streamlit.app/"},
+         "website": "https://stockanalysisbyshailu.streamlit.app/"},
         {"title": "News Aggregator", 
          "desc": "Consolidates data from multiple APIs to deliver up-to-date news.", 
          "tech": "Python, BeautifulSoup, Requests", 
@@ -375,3 +375,4 @@ elif section == "Resume":
 st.markdown("---")
 
 st.markdown('<div class="footer">Made with ❤️ by Shailendra Saurav — <strong>This portfolio was crafted with ChatGPT</strong></div>', unsafe_allow_html=True)
+
