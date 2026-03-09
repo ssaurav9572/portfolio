@@ -20,12 +20,9 @@ def render_home(data, images):
 
 def render_projects(data, images):
     st.subheader("💻 Projects")
-    # Featured first
     featured = [p for p in data['projects'] if p.get('featured')]
     others = [p for p in data['projects'] if not p.get('featured')]
     all_projects = featured + others
-
-    # Use 3 columns for grid
     cols = st.columns(3)
     for i, proj in enumerate(all_projects):
         with cols[i % 3]:
@@ -40,7 +37,6 @@ def render_skills(data, images):
 
 def render_experience(data, images):
     st.subheader("💼 Experience")
-    # Simple vertical timeline
     for exp in data['experience']:
         img_b64 = images.get(exp['image'], '')
         experience_card(exp, img_b64)
