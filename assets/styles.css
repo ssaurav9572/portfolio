@@ -1,0 +1,124 @@
+/* General */
+.stApp, section[data-testid="stSidebar"] {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #f0f0f5 !important;
+    background: #141414 !important;
+}
+
+/* Headers with gradient */
+.gradient-title {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    background-clip: text;          /* standard property added */
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Hero section */
+.hero {
+    padding: 40px;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.8);
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    background: #1f1f1f !important;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    color: #f0f0f5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.8);
+}
+
+.card-image {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #2a2a2a;
+}
+
+/* Skill tags */
+.skill-tag {
+    display: inline-block;
+    background: #2d2d2d;
+    color: #e50914;
+    padding: 5px 12px;
+    margin: 4px 6px 4px 0;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #e50914;
+    transition: all 0.2s;
+}
+.skill-tag:hover {
+    background: #e50914;
+    color: #ffffff;
+}
+
+/* Timeline for experience (simple vertical) */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    border-left: 3px solid #e50914;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #e50914;
+    border: 2px solid #141414;
+}
+
+/* Footer */
+.footer {
+    color: #b3b3b3;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background: #1f1f1f !important;
+    padding: 20px;
+    border-radius: 16px;
+}
+section[data-testid="stSidebar"] * {
+    color: #ffffff !important;
+}
+
+/* Buttons */
+div.stButton > button, div.stDownloadButton > button {
+    background: #e50914 !important;
+    color: white !important;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 0.4rem 1.2rem;
+    transition: background 0.2s;
+}
+div.stButton > button:hover, div.stDownloadButton > button:hover {
+    background: #b20710 !important;
+}
